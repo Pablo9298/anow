@@ -18,4 +18,22 @@ $(function() {
       scrollTop: top
     }, 1500);
   });
+
+  var headerTop = $('.header');
+  var doc = $(document);
+
+  function headerFixed() {
+    var threshold = doc.scrollTop() > 150;
+
+    if (threshold) {
+      headerTop.addClass('scrolled');
+    } else {
+      headerTop.removeClass('scrolled');
+    }
+  }
+  $(window).on('scroll', headerFixed);
+
+  headerFixed();
+
+  var mixer = mixitup('.works__content');
 });

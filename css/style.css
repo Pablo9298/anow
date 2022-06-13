@@ -100,7 +100,19 @@ body.lock {
 }
 
 .header {
-  padding: 6px 0 23px;
+  padding: 5px 0 23px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+.header.scrolled {
+  background-color: rgba(226, 220, 223, 0.9);
+  padding: 15px 0;
 }
 
 .header__nav {
@@ -140,6 +152,7 @@ body.lock {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 60px;
 }
 
 .header__bottom-content {
