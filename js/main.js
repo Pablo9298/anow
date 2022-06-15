@@ -35,5 +35,4 @@ $(function() {
 
   headerFixed();
 
-  var mixer = mixitup('.works__content');
 });
